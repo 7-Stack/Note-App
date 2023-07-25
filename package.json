@@ -1,0 +1,21 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "\"A task to build a note-app server\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "start": "node index.js",
+  "dev": "nodemon index.js",
+  "author": "\"7Stack\"",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
