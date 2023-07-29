@@ -1,17 +1,17 @@
 const mongoose = require("mongoose");
 
-const noteSchema = mongoose.Schema({
+const noteSchema = new mongoose.Schema ({
     name: {
         type: String,
-        required: (true, "please add the note name"),
+        require: (true, "please add the note name"),
     },
     author: {
         type: String,
-        required: (true, "please proide the note author"),
+        require: (true, "please provide the note author"),
     },
     numberOfPages: {
         type: String,
-        required: (true, "please add the number of note pages")
+        require: (true, "please add the number of note pages")
     },
   },
   {
