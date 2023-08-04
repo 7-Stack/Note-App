@@ -7,6 +7,7 @@ const {
     updateNote,
     deleteNote,
 } = require("../controllers/noteController");
+const validateToken = require("../middleware/validateTokenHandler");
 
 router.post ("/", createNote);
 router.get("/", getNotes);
