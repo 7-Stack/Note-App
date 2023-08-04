@@ -1,6 +1,12 @@
 const mongoose = require("mongoose");
 
-const noteSchema = new mongoose.Schema ({
+const noteSchema = new mongoose.Schema (
+  {
+    user_id: {
+      type: mongoose.Schema.Types.ObjectId,
+      requqire: true,
+      ref: "User",
+    },
     name: {
         type: String,
         require: (true, "please add the note name"),
@@ -10,7 +16,7 @@ const noteSchema = new mongoose.Schema ({
         require: (true, "please provide the note author"),
     },
     numberOfPages: {
-        type: String,
+        type: Number,
         require: (true, "please add the number of note pages")
     },
   },
